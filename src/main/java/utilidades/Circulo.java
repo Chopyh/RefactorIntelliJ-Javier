@@ -23,7 +23,7 @@ public class Circulo {
 	        double radio2 = otro.getRad();
 	        if (conDecimales)
 	        {
-	            if (radio1 == radio2) 
+	            if (radio1 == radio2)
 	              return true;
 	            else
 	              return false;
@@ -36,5 +36,13 @@ public class Circulo {
 	                return false;
 	        }
 	    }
+
+		public void setRad(double rad){
+			this.rad = rad;
+		}
+
+		public double getRad(){
+			return this.rad;
+		}
 	}
 

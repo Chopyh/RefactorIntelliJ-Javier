@@ -23,10 +23,10 @@ public class Circunferencia {
         return area;
     }
 
-    public boolean esIgual(Circunferencia otro, boolean conDecimales) {
+    public boolean esIgual(boolean considerarDecimales, Circunferencia otro) {
         double radio1 = this.radio;
         double radio2 = otro.getRadio();
-        if (conDecimales) {
+        if (considerarDecimales) {
             return radio1 == radio2;
         } else {
             return Math.abs(radio1 - radio2) < 1;

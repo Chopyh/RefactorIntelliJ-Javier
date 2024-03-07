@@ -13,13 +13,9 @@ public class Circunferencia {
         color = "rojo";
         System.out.println("Di�metro: " + 2 * radio);
         System.out.println("Color: " + color);
-        double area = calcularArea();
+        double area1 = 2 * PI * this.radio * this.radio;
+        double area = area1;
         System.out.println(area);
-    }
-
-    private double calcularArea() {
-        double area = 2 * PI * this.radio * this.radio;
-        return area;
     }
 
     public boolean esIgual(boolean considerarDecimales, Circunferencia otro) {
